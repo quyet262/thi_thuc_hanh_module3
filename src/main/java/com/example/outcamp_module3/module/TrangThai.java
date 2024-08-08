@@ -12,6 +12,10 @@ public class TrangThai {
         this.name = name;
     }
 
+    public TrangThai(String name) {
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }

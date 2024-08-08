@@ -38,3 +38,4 @@ VALUES
 
 select id_mat_bang, ma_mat_bang, ten_trang_thai, dien_tich, tang, loai_mat_bang,gia_tien, ngay_bat_dau, ngay_ket_thuc from MatBang
 join TrangThai on MatBang.trang_thai_id = TrangThai.id;
+select ten_trang_thai from TrangThai;

@@ -1,5 +1,6 @@
 package com.example.outcamp_module3.service.mat_bang_DTO;
 
+import com.example.outcamp_module3.module.MatBang;
 import com.example.outcamp_module3.module.MatBangDTO;
 import com.example.outcamp_module3.repository.mat_bang_DTO.MatBangRepositoryDTO;
 
@@ -29,9 +30,17 @@ public class MatBangServiceDTO implements IMatBangServiceDTO{
     public void save(MatBangDTO object) {
 
     }
+    public void saveMatBang(MatBang matBang){
+        matBangRepositoryDTO.saveMatBang(matBang);
+    }
 
     @Override
     public MatBangDTO findById(int id) {
         return null;
     }
+
+    public MatBangDTO findByMaMatBang(String maMatBang) {
+        return matBangRepositoryDTO.findByMaMatBang(maMatBang);
+    }
+
 }

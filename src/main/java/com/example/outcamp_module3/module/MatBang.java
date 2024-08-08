@@ -29,6 +29,17 @@ public class MatBang {
         this.ngayKetthuc = ngayKetthuc;
     }
 
+    public MatBang(String maMatBang, int idTrangThai, float dienTich, int tang, boolean loaiMatBang, double giaTien, Date ngayBatDau, Date ngayKetthuc) {
+        this.maMatBang = maMatBang;
+        this.idTrangThai = idTrangThai;
+        this.dienTich = dienTich;
+        this.tang = tang;
+        this.loaiMatBang = loaiMatBang;
+        this.giaTien = giaTien;
+        this.ngayBatDau = ngayBatDau;
+        this.ngayKetthuc = ngayKetthuc;
+    }
+
     public int getId() {
         return id;
     }
